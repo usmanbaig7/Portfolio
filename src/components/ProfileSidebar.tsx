@@ -1,14 +1,28 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Globe, ChevronDown } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Globe, ChevronDown, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "@/components/ThemeProvider";
 import avatar from "@/assets/avatar.png";
 
 export function ProfileSidebar() {
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <aside className="surface-card w-full lg:sticky lg:top-8 lg:max-h-[calc(100vh-4rem)] lg:w-[340px] lg:shrink-0 lg:overflow-y-auto">
       <div className="p-6 lg:p-8">
+        {/* Theme toggle */}
+        <div className="mb-4 flex justify-end">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-secondary text-muted-foreground transition hover:border-primary hover:text-primary"
+          >
+            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
+        </div>
+
         {/* Avatar */}
         <div className="flex flex-col items-center gap-4">
           <div className="relative">
