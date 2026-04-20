@@ -1,10 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Globe, ChevronDown } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Globe, ChevronDown, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "@/components/ThemeProvider";
 import avatar from "@/assets/avatar.png";
 
 export function ProfileSidebar() {
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <aside className="surface-card w-full lg:sticky lg:top-8 lg:max-h-[calc(100vh-4rem)] lg:w-[340px] lg:shrink-0 lg:overflow-y-auto">
