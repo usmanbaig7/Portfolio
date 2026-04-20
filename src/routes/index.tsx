@@ -45,14 +45,20 @@ function AboutPage() {
 
       <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
         <p>
-          I'm a software developer focused on building polished, cross-platform experiences. My
-          work spans mobile and web — from architecting REST APIs and integrating third-party
-          services to shipping interfaces that feel fast and considered.
+          I'm a Flutter developer with over 4 years of experience building high-quality mobile
+          applications for both Android and iOS. I specialize in creating smooth, responsive, and
+          scalable apps that deliver a seamless user experience across devices.
         </p>
         <p>
-          I care about details: clean state management, reliable performance, and UI that respects
-          the user's time. If you're looking for a partner to bring your idea to life with
-          craft and pace, let's talk.
+          My work goes beyond just UI — I focus on clean architecture, efficient state management,
+          and performance optimization to ensure apps feel fast and reliable in real-world use.
+          From integrating APIs and third-party services to crafting polished interfaces, I aim to
+          build products that are both functional and thoughtfully designed.
+        </p>
+        <p>
+          I value attention to detail, maintainable code, and delivering solutions that not only
+          work — but work well. If you're looking to turn an idea into a solid, production-ready
+          app, I'd be glad to collaborate.
         </p>
       </div>
 
