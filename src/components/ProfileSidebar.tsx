@@ -9,6 +9,18 @@ export function ProfileSidebar() {
   return (
     <aside className="surface-card w-full lg:sticky lg:top-8 lg:max-h-[calc(100vh-4rem)] lg:w-[340px] lg:shrink-0 lg:overflow-y-auto">
       <div className="p-6 lg:p-8">
+        {/* Theme toggle */}
+        <div className="mb-4 flex justify-end">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-secondary text-muted-foreground transition hover:border-primary hover:text-primary"
+          >
+            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
+        </div>
+
         {/* Avatar */}
         <div className="flex flex-col items-center gap-4">
           <div className="relative">
