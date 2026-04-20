@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Smartphone, Code2, PenTool, Server } from "lucide-react";
+import { Smartphone, PenTool } from "lucide-react";
 import { PortfolioLayout } from "@/components/PortfolioLayout";
 import { SectionHeading } from "@/components/SectionHeading";
 
@@ -30,32 +30,13 @@ const services = [
     desc: "Crafting performant cross-platform applications for iOS and Android.",
   },
   {
-    icon: Code2,
-    title: "Web Development",
-    desc: "Modern, responsive websites built with React and TypeScript.",
-  },
-  {
     icon: PenTool,
     title: "UI / UX Design",
     desc: "Thoughtful interfaces that feel intuitive and look refined.",
   },
-  {
-    icon: Server,
-    title: "Backend Development",
-    desc: "Reliable APIs and services designed to scale with your product.",
-  },
 ];
 
-const skills = [
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Flutter",
-  "Tailwind CSS",
-  "PostgreSQL",
-  "Figma",
-];
+const skills = ["Flutter", "Dart", "C#", "Hive", "MongoDB", "SQL", "Figma"];
 
 function AboutPage() {
   return (
