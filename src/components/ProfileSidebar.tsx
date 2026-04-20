@@ -35,15 +35,15 @@ export function ProfileSidebar() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <span className="absolute bottom-1 right-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-card bg-emerald-500">
+            <span className="absolute bottom-1 right-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-card bg-emerald-500 shadow-[0_0_12px_3px_rgba(16,185,129,0.7)]">
               <span className="h-1.5 w-1.5 animate-ping rounded-full bg-emerald-300" />
             </span>
           </div>
 
           <div className="text-center">
             <h1 className="text-2xl font-bold text-foreground">Usman Baig</h1>
-            <span className="mt-3 inline-block rounded-md bg-secondary px-3 py-1 text-xs font-medium text-muted-foreground">
-              Software Developer
+            <span className="mt-3 inline-block rounded-md bg-gradient-to-r from-amber-400 to-yellow-500 px-3 py-1 text-xs font-semibold text-neutral-900 shadow-[0_4px_14px_rgba(234,179,8,0.45)]">
+              Flutter Developer
             </span>
           </div>
         </div>
