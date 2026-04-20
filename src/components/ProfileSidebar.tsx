@@ -50,9 +50,9 @@ export function ProfileSidebar() {
 
           {/* Contact info */}
           <ul className="space-y-5">
-            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="usman.baig@example.com" />
-            <ContactRow icon={<Phone className="h-4 w-4" />} label="Phone" value="+92 300 1234567" />
-            <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value="Karachi, Pakistan" />
+            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="usmanbaig375@gmail.com" />
+            <ContactRow icon={<Phone className="h-4 w-4" />} label="Phone" value="+92 340 8028122" />
+            <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value="Lahore, Pakistan" />
             <ContactRow icon={<Globe className="h-4 w-4" />} label="Website" value="usmanbaig.dev" />
           </ul>
 
