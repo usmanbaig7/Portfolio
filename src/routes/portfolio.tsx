@@ -16,7 +16,7 @@ export const Route = createFileRoute("/portfolio")({
   component: PortfolioPage,
 });
 
-const categories = ["All", "Applications", "Web", "UI/UX"] as const;
+const categories = ["All", "Applications", "UI/UX"] as const;
 type Category = (typeof categories)[number];
 
 type Project = {
@@ -27,15 +27,15 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { title: "Lyra Wallet", category: "Applications", gradient: "from-amber-500 to-rose-500", initials: "LW" },
-  { title: "Northstar Maps", category: "Applications", gradient: "from-sky-500 to-indigo-600", initials: "NM" },
-  { title: "Brewly", category: "Applications", gradient: "from-orange-500 to-red-600", initials: "BR" },
-  { title: "Pulse Fitness", category: "Applications", gradient: "from-emerald-500 to-teal-600", initials: "PF" },
-  { title: "Marqa Dashboard", category: "Web", gradient: "from-violet-500 to-fuchsia-600", initials: "MD" },
-  { title: "Kavi Blog", category: "Web", gradient: "from-pink-500 to-rose-600", initials: "KB" },
-  { title: "Orbit CMS", category: "Web", gradient: "from-cyan-500 to-blue-600", initials: "OC" },
-  { title: "Halcyon Banking", category: "UI/UX", gradient: "from-yellow-500 to-orange-600", initials: "HB" },
-  { title: "Nimbus Travel", category: "UI/UX", gradient: "from-indigo-500 to-purple-600", initials: "NT" },
+  { title: "Lincsell POS", category: "Applications", gradient: "from-amber-500 to-rose-500", initials: "LW" },
+  { title: "Lincsell POS Lite", category: "Applications", gradient: "from-sky-500 to-indigo-600", initials: "NM" },
+  { title: "Family Thrift Center", category: "Applications", gradient: "from-orange-500 to-red-600", initials: "BR" },
+  { title: "Managers App", category: "Applications", gradient: "from-emerald-500 to-teal-600", initials: "PF" },
+  // { title: "Marqa Dashboard", category: "Web", gradient: "from-violet-500 to-fuchsia-600", initials: "MD" },
+  // { title: "Kavi Blog", category: "Web", gradient: "from-pink-500 to-rose-600", initials: "KB" },
+  // { title: "Orbit CMS", category: "Web", gradient: "from-cyan-500 to-blue-600", initials: "OC" },
+  // { title: "Halcyon Banking", category: "UI/UX", gradient: "from-yellow-500 to-orange-600", initials: "HB" },
+  // { title: "Nimbus Travel", category: "UI/UX", gradient: "from-indigo-500 to-purple-600", initials: "NT" },
 ];
 
 function PortfolioPage() {

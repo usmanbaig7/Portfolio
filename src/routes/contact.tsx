@@ -23,16 +23,16 @@ function ContactPage() {
     <PortfolioLayout>
       <SectionHeading>Contact</SectionHeading>
 
-      <div className="mb-10 overflow-hidden rounded-2xl border border-border">
+      {/* <div className="mb-10 overflow-hidden rounded-2xl border border-border">
         <iframe
           title="Karachi map"
           src="https://www.openstreetmap.org/export/embed.html?bbox=66.9%2C24.78%2C67.2%2C25.0&layer=mapnik"
           className="h-64 w-full"
           loading="lazy"
         />
-      </div>
+      </div> */}
 
-      <h3 className="mb-6 text-2xl font-bold text-foreground">Contact Form</h3>
+      {/* <h3 className="mb-6 text-2xl font-bold text-foreground">Contact Form</h3> */}
 
       <form
         onSubmit={(e) => {

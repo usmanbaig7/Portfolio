@@ -43,7 +43,7 @@ export function ProfileSidebar() {
           <div className="text-center">
             <h1 className="text-2xl font-bold text-foreground">Usman Baig</h1>
             <span className="mt-3 inline-block rounded-md bg-gradient-to-r from-amber-400 to-yellow-500 px-3 py-1 text-xs font-semibold text-neutral-900 shadow-[0_4px_14px_rgba(234,179,8,0.45)]">
-              Flutter Developer
+              Software Engineer
             </span>
           </div>
         </div>
@@ -67,16 +67,16 @@ export function ProfileSidebar() {
             <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="usmanbaig375@gmail.com" />
             <ContactRow icon={<Phone className="h-4 w-4" />} label="Phone" value="+92 340 8028122" />
             <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value="Lahore, Pakistan" />
-            <ContactRow icon={<Globe className="h-4 w-4" />} label="Website" value="usmanbaig.dev" />
+            {/* <ContactRow icon={<Globe className="h-4 w-4" />} label="Website" value="usmanbaig.dev" /> */}
           </ul>
 
           <div className="my-6 h-px bg-border" />
 
           {/* Socials */}
           <div className="flex items-center justify-center gap-2">
-            <SocialLink href="#" label="LinkedIn"><Linkedin className="h-4 w-4" /></SocialLink>
-            <SocialLink href="#" label="GitHub"><Github className="h-4 w-4" /></SocialLink>
-            <SocialLink href="#" label="Twitter"><Twitter className="h-4 w-4" /></SocialLink>
+            <SocialLink href="https://www.linkedin.com/in/usman-baig-28a776201/" label="LinkedIn"><Linkedin className="h-4 w-4" /></SocialLink>
+            <SocialLink href="https://github.com/usmanbaig7" label="GitHub"><Github className="h-4 w-4" /></SocialLink>
+            {/* <SocialLink href="#" label="Twitter"><Twitter className="h-4 w-4" /></SocialLink> */}
             <Link
               to="/contact"
               className="ml-2 inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90"

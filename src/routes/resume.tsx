@@ -17,22 +17,22 @@ export const Route = createFileRoute("/resume")({
 
 const education = [
   {
-    title: "BS in Computer Science",
-    place: "FAST National University",
-    period: "2018 — 2022",
+    title: "BS in Software Engineering",
+    place: "University of Kotli, Azad Kashmir, Pakistan",
+    period: "2015 — 2019",
   },
-  {
-    title: "Pre-Engineering, Intermediate",
-    place: "DJ Sindh Government Science College",
-    period: "2016 — 2018",
-  },
+  // {
+  //   title: "Pre-Engineering, Intermediate",
+  //   place: "DJ Sindh Government Science College",
+  //   period: "2016 — 2018",
+  // },
 ];
 
 const experience = [
   {
-    title: "Senior Software Developer",
-    place: "Northbridge Studio",
-    period: "Mar 2024 — Present",
+    title: "Graphics Designer",
+    place: "Heaven Technologies",
+    period: "Mar 2018 — Jul 2019",
     bullets: [
       "Lead development of cross-platform mobile applications used by 100k+ users.",
       "Architected scalable API integrations and design-system primitives.",
@@ -40,22 +40,13 @@ const experience = [
     ],
   },
   {
-    title: "Mid-Level Mobile Developer",
-    place: "Lumen Tech",
-    period: "Aug 2022 — Feb 2024",
+    title: "Mobile App Developer",
+    place: "Zilon International",
+    period: "Aug 2021 — Present",
     bullets: [
       "Built customer-facing features across iOS and Android in Flutter and React Native.",
       "Integrated payment gateways and secure authentication flows.",
       "Collaborated with backend and design to ship monthly releases.",
-    ],
-  },
-  {
-    title: "Software Developer Intern",
-    place: "Kite Labs",
-    period: "Jun 2021 — Dec 2021",
-    bullets: [
-      "Contributed to internal tooling and CI improvements.",
-      "Assisted in debugging production issues and improving test coverage.",
     ],
   },
 ];
@@ -75,6 +66,7 @@ function ResumePage() {
 
       <a
         href="#"
+        download
         className="mt-10 inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
       >
         <Download className="h-4 w-4" />
