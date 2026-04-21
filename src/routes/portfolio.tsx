@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { PortfolioLayout } from "@/components/PortfolioLayout";
@@ -16,27 +16,7 @@ export const Route = createFileRoute("/portfolio")({
   component: PortfolioPage,
 });
 
-const categories = ["All", "Applications", "UI/UX"] as const;
-type Category = (typeof categories)[number];
-
-type Project = {
-  title: string;
-  category: Exclude<Category, "All">;
-  gradient: string;
-  initials: string;
-};
-
-const projects: Project[] = [
-  { title: "Lincsell POS", category: "Applications", gradient: "from-amber-500 to-rose-500", initials: "LW" },
-  { title: "Lincsell POS Lite", category: "Applications", gradient: "from-sky-500 to-indigo-600", initials: "NM" },
-  { title: "Family Thrift Center", category: "Applications", gradient: "from-orange-500 to-red-600", initials: "BR" },
-  { title: "Managers App", category: "Applications", gradient: "from-emerald-500 to-teal-600", initials: "PF" },
-  // { title: "Marqa Dashboard", category: "Web", gradient: "from-violet-500 to-fuchsia-600", initials: "MD" },
-  // { title: "Kavi Blog", category: "Web", gradient: "from-pink-500 to-rose-600", initials: "KB" },
-  // { title: "Orbit CMS", category: "Web", gradient: "from-cyan-500 to-blue-600", initials: "OC" },
-  // { title: "Halcyon Banking", category: "UI/UX", gradient: "from-yellow-500 to-orange-600", initials: "HB" },
-  // { title: "Nimbus Travel", category: "UI/UX", gradient: "from-indigo-500 to-purple-600", initials: "NT" },
-];
+import { categories, type Category, projects } from "@/data/projects";
 
 function PortfolioPage() {
   const [filter, setFilter] = useState<Category>("All");
@@ -64,9 +44,10 @@ function PortfolioPage() {
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((p) => (
-          <a
-            key={p.title}
-            href="#"
+          <Link
+            key={p.id}
+            to="/portfolio/$projectId"
+            params={{ projectId: p.id }}
             className="group block overflow-hidden rounded-2xl border border-border bg-surface transition hover:border-primary/40"
           >
             <div
@@ -83,7 +64,7 @@ function PortfolioPage() {
               <h4 className="text-base font-semibold text-foreground">{p.title}</h4>
               <p className="mt-0.5 text-xs text-muted-foreground">{p.category}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </PortfolioLayout>

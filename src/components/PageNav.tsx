@@ -4,7 +4,6 @@ const tabs = [
   { to: "/", label: "About" },
   { to: "/resume", label: "Resume" },
   { to: "/portfolio", label: "Portfolio" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function PageNav() {

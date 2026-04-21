@@ -17,7 +17,7 @@ export const Route = createFileRoute("/resume")({
 
 const education = [
   {
-    title: "BS in Software Engineering",
+    title: "Bachelors in Software Engineering",
     place: "University of Kotli, Azad Kashmir, Pakistan",
     period: "2015 — 2019",
   },
@@ -34,9 +34,8 @@ const experience = [
     place: "Heaven Technologies, Islamabad, Pakistan",
     period: "Feb 2020 — Sep 2020",
     bullets: [
-      "Lead development of cross-platform mobile applications used by 100k+ users.",
-      "Architected scalable API integrations and design-system primitives.",
-      "Mentor junior developers through code reviews and pairing sessions.",
+      "My Key role Designing high-quality website graphics, including banners, icons, and UI components, aligned with brand guidelines",
+
     ],
   },
   {
@@ -44,9 +43,14 @@ const experience = [
     place: "Zilon International, Lahore, Pakistan",
     period: "Nov 2021 — Present",
     bullets: [
-      "Built customer-facing features across iOS and Android in Flutter and React Native.",
-      "Integrated payment gateways and secure authentication flows.",
-      "Collaborated with backend and design to ship monthly releases.",
+      "Developed high-quality Flutter applications for android and ios, ensuring optimal performance and user satisfaction across multiple projects.",
+      "Diagnosed and resolved critical issues, enhancing the overall stability of mobile applications.",
+      "Focused on delivering seamless, user-centered mobile experiences that elevate user engagement.",
+      "State Management: Provider, GetIt, Riverpod.",
+      "API Integration: REST, GraphQL, Firebase, Web Sockets.",
+      "Payment Gateway Integration (Stripe).",
+      "Collaboration with Designers & Developers.",
+      "Managing CI/CD pipelines and automated deployment (Azure Devops, GitHub Actions).",
     ],
   },
 ];

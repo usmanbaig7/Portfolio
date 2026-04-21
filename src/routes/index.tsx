@@ -36,7 +36,7 @@ const services = [
   },
 ];
 
-const skills = ["Flutter", "Dart", "C#", "Hive", "MongoDB", "SQL", "Figma"];
+const skills = ["Flutter", "Dart", "C#", "Hive", "MongoDB", "SQL", "Figma", "Git", "CI/CD", "Adobe Illustrator", "Adobe Photoshop"];
 
 function AboutPage() {
   return (
@@ -45,12 +45,12 @@ function AboutPage() {
 
       <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
         <p>
-          I'm a Flutter developer with over 4 years of experience building high-quality mobile
+          I'm a Flutter developer with a Bachelors degree in Software Engineering and having 4+ years of experience building high-quality mobile
           applications for both Android and iOS. I specialize in creating smooth, responsive, and
           scalable apps that deliver a seamless user experience across devices.
         </p>
         <p>
-          My work goes beyond just UI — I focus on clean architecture, efficient state management,
+          My work goes beyond just UI. I focus on clean architecture, efficient state management,
           and performance optimization to ensure apps feel fast and reliable in real-world use.
           From integrating APIs and third-party services to crafting polished interfaces, I aim to
           build products that are both functional and thoughtfully designed.

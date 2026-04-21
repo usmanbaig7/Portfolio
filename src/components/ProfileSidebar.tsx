@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Globe, ChevronDown, Sun, Moon } from "lucide-react";
 import { useState } from "react";
 import { useTheme } from "@/components/ThemeProvider";
@@ -6,6 +5,13 @@ import avatar from "@/assets/avatar.png";
 
 export function ProfileSidebar() {
   const [open, setOpen] = useState(false);
+  const [opening, setOpening] = useState(false);
+
+  function handleHireMe() {
+    setOpening(true);
+    window.location.href = "mailto:usmanbaig375@gmail.com";
+    setTimeout(() => setOpening(false), 3000);
+  }
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -80,12 +86,18 @@ export function ProfileSidebar() {
               <SocialLink href="https://github.com/usmanbaig7" label="GitHub"><Github className="h-4 w-4" /></SocialLink>
               {/* <SocialLink href="#" label="Twitter"><Twitter className="h-4 w-4" /></SocialLink> */}
             </div>
-            <Link
-              to="/contact"
+            <button
+              type="button"
+              onClick={handleHireMe}
               className="w-full inline-flex items-center justify-center rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
             >
               Hire Me
-            </Link>
+            </button>
+            {opening && (
+              <p className="text-center text-xs text-muted-foreground animate-pulse">
+                Opening your mail app…
+              </p>
+            )}
           </div>
         </div>
       </div>

@@ -58,10 +58,13 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundComponent,
 });
 
+const themeScript = `(function(){try{var t=localStorage.getItem('portfolio-theme');if(t!=='light')document.documentElement.classList.add('dark');}catch(e){}})();`;
+
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <HeadContent />
       </head>
       <body>
