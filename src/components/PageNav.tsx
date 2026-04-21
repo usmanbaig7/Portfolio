@@ -21,7 +21,7 @@ export function PageNav() {
                 to={tab.to}
                 className={`relative inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-medium transition lg:px-5 ${
                   active
-                    ? "text-primary"
+                    ? "bg-primary/15 text-primary"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >

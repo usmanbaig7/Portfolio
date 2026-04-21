@@ -31,8 +31,8 @@ const education = [
 const experience = [
   {
     title: "Graphics Designer",
-    place: "Heaven Technologies",
-    period: "Mar 2018 — Jul 2019",
+    place: "Heaven Technologies, Islamabad, Pakistan",
+    period: "Feb 2020 — Sep 2020",
     bullets: [
       "Lead development of cross-platform mobile applications used by 100k+ users.",
       "Architected scalable API integrations and design-system primitives.",
@@ -41,8 +41,8 @@ const experience = [
   },
   {
     title: "Mobile App Developer",
-    place: "Zilon International",
-    period: "Aug 2021 — Present",
+    place: "Zilon International, Lahore, Pakistan",
+    period: "Nov 2021 — Present",
     bullets: [
       "Built customer-facing features across iOS and Android in Flutter and React Native.",
       "Integrated payment gateways and secure authentication flows.",
@@ -65,7 +65,7 @@ function ResumePage() {
       </Section>
 
       <a
-        href="#"
+        href="https://drive.google.com/file/d/1EbQgJv8QWIUJjnY7litxn4E9i4ei-3ap/view?usp=sharing"
         download
         className="mt-10 inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
       >

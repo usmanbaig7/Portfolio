@@ -17,9 +17,10 @@ export function ProfileSidebar() {
             type="button"
             onClick={toggleTheme}
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-secondary text-muted-foreground transition hover:border-primary hover:text-primary"
+            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary px-3 py-2 text-xs font-medium text-muted-foreground transition hover:border-primary hover:text-primary"
           >
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            {theme === "dark" ? "Light" : "Dark"}
           </button>
         </div>
 
@@ -73,13 +74,15 @@ export function ProfileSidebar() {
           <div className="my-6 h-px bg-border" />
 
           {/* Socials */}
-          <div className="flex items-center justify-center gap-2">
-            <SocialLink href="https://www.linkedin.com/in/usman-baig-28a776201/" label="LinkedIn"><Linkedin className="h-4 w-4" /></SocialLink>
-            <SocialLink href="https://github.com/usmanbaig7" label="GitHub"><Github className="h-4 w-4" /></SocialLink>
-            {/* <SocialLink href="#" label="Twitter"><Twitter className="h-4 w-4" /></SocialLink> */}
+          <div className="flex flex-col items-center gap-3">
+            <div className="flex items-center justify-center gap-2">
+              <SocialLink href="https://www.linkedin.com/in/usman-baig-28a776201/" label="LinkedIn"><Linkedin className="h-4 w-4" /></SocialLink>
+              <SocialLink href="https://github.com/usmanbaig7" label="GitHub"><Github className="h-4 w-4" /></SocialLink>
+              {/* <SocialLink href="#" label="Twitter"><Twitter className="h-4 w-4" /></SocialLink> */}
+            </div>
             <Link
               to="/contact"
-              className="ml-2 inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90"
+              className="w-full inline-flex items-center justify-center rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
             >
               Hire Me
             </Link>
