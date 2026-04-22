@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Globe, ChevronDown, Sun, Moon } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Sun, Moon, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { useTheme } from "@/components/ThemeProvider";
 import avatar from "@/assets/avatar.png";
@@ -74,7 +74,6 @@ export function ProfileSidebar() {
             <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="usmanbaig375@gmail.com" />
             <ContactRow icon={<Phone className="h-4 w-4" />} label="Phone" value="+92 340 8028122" />
             <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value="Lahore, Pakistan" />
-            {/* <ContactRow icon={<Globe className="h-4 w-4" />} label="Website" value="usmanbaig.dev" /> */}
           </ul>
 
           <div className="my-6 h-px bg-border" />
@@ -84,7 +83,6 @@ export function ProfileSidebar() {
             <div className="flex items-center justify-center gap-2">
               <SocialLink href="https://www.linkedin.com/in/usman-baig-28a776201/" label="LinkedIn"><Linkedin className="h-4 w-4" /></SocialLink>
               <SocialLink href="https://github.com/usmanbaig7" label="GitHub"><Github className="h-4 w-4" /></SocialLink>
-              {/* <SocialLink href="#" label="Twitter"><Twitter className="h-4 w-4" /></SocialLink> */}
             </div>
             <button
               type="button"
