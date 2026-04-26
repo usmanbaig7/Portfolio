@@ -97,6 +97,24 @@ export default function ProjectDetailPage() {
               </div>
             </div>
           )}
+
+          {/* Project Video */}
+          {project.videoUrl && (
+            <div className="mt-8">
+              <h2 className="mb-4 text-lg font-semibold text-foreground">Project Video</h2>
+              <div className="overflow-hidden rounded-xl border border-border">
+                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                  <iframe
+                    src={project.videoUrl}
+                    title={`${project.title} demo video`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </PortfolioLayout>

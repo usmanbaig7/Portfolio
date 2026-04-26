@@ -16,6 +16,7 @@ export type Project = {
   fullDescription?: string;
   keyPoints?: KeyPoint[];
   techStack?: string[];
+  videoUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -56,6 +57,7 @@ export const projects: Project[] = [
       },
     ],
     techStack: ["Flutter", "Dart", "Azure", "Stripe", "Hive"],
+    videoUrl: "https://www.youtube.com/embed/bwLbVmHPdM4",
   },
   {
     id: "lincsell-pos-lite",
@@ -94,6 +96,7 @@ export const projects: Project[] = [
       },
     ],
     techStack: ["Flutter", "Dart", "Hive", "Stripe", "Firebase", "Azure"],
+    videoUrl: "https://www.youtube.com/embed/usYvBFd0Kqc",
   },
   {
     id: "family-thrift-center",
@@ -186,5 +189,6 @@ export const projects: Project[] = [
       },
     ],
     techStack: ["Flutter", "Dart", "Hive", "Azure"],
+    videoUrl: "https://www.youtube.com/embed/9Oc1LDQPMu8",
   },
 ];

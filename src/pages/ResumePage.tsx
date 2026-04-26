@@ -50,7 +50,7 @@ export default function ResumePage() {
       </Section>
 
       <a
-        href="https://drive.google.com/file/d/1EbQgJv8QWIUJjnY7litxn4E9i4ei-3ap/view?usp=sharing"
+        href="https://drive.google.com/file/d/1G13QB0qYStUb_K-Tse0fnwhz2lT2Ln8b/view?usp=sharing"
         download
         className="mt-10 inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
       >

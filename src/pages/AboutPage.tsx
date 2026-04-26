@@ -15,7 +15,7 @@ const services = [
   },
 ];
 
-const skills = ["Flutter", "Dart", "C#", "Hive", "MongoDB", "SQL", "Figma", "Git", "CI/CD", "Adobe Illustrator", "Adobe Photoshop"];
+const skills = ["Flutter", "Dart", "C#", "Hive", "CosmosDB", "SQL", "Figma", "Git", "CI/CD", "Adobe Illustrator", "Adobe Photoshop", "Adobe XD"];
 
 export default function AboutPage() {
   return (
