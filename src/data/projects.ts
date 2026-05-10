@@ -25,7 +25,7 @@ export const projects: Project[] = [
     title: "Lincsell POS",
     category: "Applications",
     gradient: "from-amber-500 to-rose-500",
-    initials: "LW",
+    initials: "LP",
     description: "A comprehensive Point of Sale system tailored for modern retail.",
     fullDescription:
       "Lincsell POS is a modern point-of-sale solution built to help small and medium-sized businesses manage their daily sales operations efficiently. It provides a seamless checkout experience while handling inventory, payments, and transaction tracking in a single platform. The app is designed with performance, scalability, and ease of use in mind, making it suitable for real-world retail environments.",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "Lincsell POS Lite",
     category: "Applications",
     gradient: "from-sky-500 to-indigo-600",
-    initials: "NM",
+    initials: "LPL",
     description: "A streamlined version of our Point of Sale system for small businesses.",
     fullDescription:
       "Lincsell POS Lite is a lightweight and flexible point-of-sale solution designed for business owners who need to manage sales beyond a fixed location. It enables seamless transactions on the go, making it ideal for small businesses, mobile vendors, and startups. With a simplified feature set, the app focuses on speed, usability, and accessibility while maintaining reliable performance.",
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     title: "Family Thrift Center",
     category: "Applications",
     gradient: "from-orange-500 to-red-600",
-    initials: "BR",
+    initials: "FTC",
     description: "An application to manage inventory and sales for the Family Thrift Center.",
     fullDescription:
       "The Family Thrift Center app is designed to enhance the shopping experience by helping users discover nearby stores and explore ongoing offers with ease. It provides a seamless way to stay connected with local businesses while benefiting from exclusive deals. With an integrated loyalty system, users can earn reward points on purchases and redeem them for future benefits, encouraging long-term engagement.",
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     title: "Managers App",
     category: "Applications",
     gradient: "from-emerald-500 to-teal-600",
-    initials: "PF",
+    initials: "MA",
     description: "An internal tool for managers to oversee operations and team performance.",
     fullDescription:
       "The Managers App for Family Thrift Store is designed to make receipt management more accurate, organized, and fully digital. It allows managers to capture receipt images and upload them directly to the server for secure backup. The app also ensures better document quality by using a built-in scanning system that guides users to properly align receipts within a defined boundary before capturing the image. This helps avoid unclear or improperly taken photos. In addition, managers can easily view, manage, and access all uploaded receipts anytime, improving record keeping and operational efficiency.",
